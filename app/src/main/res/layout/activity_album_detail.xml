@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+  <ImageView
+      android:id="@+id/album_art_blurred_background"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/mean_something_kinder_than_wolves"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription"
+      style="@style/BlurredBackgroundImageStyle"/>
+
+  <TextView
+      android:id="@+id/artist"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginTop="16dp"
+      android:text="Kinder than Wolves"
+      app:layout_constraintHorizontal_bias="0.502"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      style="@style/PlaybackScreenArtistStyle"/>
+
+  <TextView
+      android:id="@+id/album_title"
+      android:layout_marginTop="8dp"
+      android:text="Mean Something"
+      app:layout_constraintDimensionRatio="h,1:1"
+      app:layout_constraintLeft_toLeftOf="@+id/artist"
+      app:layout_constraintRight_toRightOf="@+id/artist"
+      app:layout_constraintTop_toTopOf="@+id/space"
+      style="@style/PlaybackScreenSongStyle"/>
+  <Space
+      android:id="@+id/space"
+      android:layout_width="0dp"
+      android:layout_height="8dp"
+      app:layout_constraintBottom_toBottomOf="@+id/artist"
+      tools:layout_editor_absoluteX="52dp"/>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/song_list"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginBottom="0dp"
+      android:layout_marginTop="23dp"
+      android:background="#60000000"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/album_title"/>
+
+</android.support.constraint.ConstraintLayout>

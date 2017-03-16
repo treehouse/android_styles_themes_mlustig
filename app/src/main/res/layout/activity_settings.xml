@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1d1d1d"
+    android:orientation="vertical">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      tools:layout_height="52dp"
+      style="@style/SettingsToolbarStyle">
+    <TextView
+        android:text="SETTINGS"
+        style="@style/SettingsToolbarTextStyle"/>
+  </android.support.v7.widget.Toolbar>
+
+  <EditText
+      android:id="@+id/username"
+      android:layout_marginTop="32dp"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar"
+      style="@style/SettingsUsernameStyle"/>
+
+  <EditText
+      android:id="@+id/email"
+      android:layout_marginTop="8dp"
+      app:layout_constraintTop_toBottomOf="@id/username"
+      style="@style/SettingsEmailStyle"/>
+
+  <android.support.v7.widget.SwitchCompat
+      android:id="@+id/bass_boost"
+      android:layout_marginTop="48dp"
+      android:checked="true"
+      android:text="Bass Boost"
+      app:layout_constraintTop_toBottomOf="@+id/email"
+      style="@style/SettingsSwitchStyle"/>
+
+  <android.support.v7.widget.SwitchCompat
+      android:id="@+id/volume_boost"
+      android:text="Volume Boost"
+      app:layout_constraintTop_toBottomOf="@+id/bass_boost"
+      style="@style/SettingsSwitchStyle"
+      tools:layout_editor_absoluteX="64dp"
+      android:layout_marginTop="8dp"/>
+
+  <SeekBar
+      android:id="@+id/seek_bar_fidelity"
+      app:layout_constraintTop_toBottomOf="@+id/fidelity"
+      style="@style/SettingsSeekBarStyle"/>
+
+  <TextView
+      android:id="@+id/fidelity"
+      android:layout_marginTop="48dp"
+      android:text="Fidelity"
+      app:layout_constraintLeft_toLeftOf="@+id/seek_bar_fidelity"
+      app:layout_constraintTop_toBottomOf="@+id/volume_boost"
+      style="@style/SettingsTextStyle"/>
+
+  <TextView
+      android:id="@+id/ambiance"
+      android:layout_marginTop="32dp"
+      android:text="Ambiance"
+      app:layout_constraintLeft_toLeftOf="@+id/fidelity"
+      app:layout_constraintTop_toBottomOf="@+id/seek_bar_fidelity"
+      style="@style/SettingsTextStyle"/>
+
+  <SeekBar
+      android:id="@+id/seek_bar_ambiance"
+      android:layout_marginTop="8dp"
+      app:layout_constraintTop_toBottomOf="@+id/ambiance"
+      style="@style/SettingsSeekBarStyle"/>
+</android.support.constraint.ConstraintLayout>
