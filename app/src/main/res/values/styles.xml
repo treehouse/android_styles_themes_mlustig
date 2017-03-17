@@ -114,8 +114,6 @@
     <item name="android:layout_marginRight">64dp</item>
     <item name="layout_constraintRight_toRightOf">parent</item>
     <item name="layout_constraintLeft_toLeftOf">parent</item>
-    <item name="android:colorControlActivated">@color/settingsPrimary</item>
-    <item name="android:colorControlNormal">@color/settingsAccent</item>
   </style>
 
 </resources>
