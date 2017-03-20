@@ -58,7 +58,11 @@
       android:text="03:20"
       app:layout_constraintLeft_toLeftOf="@+id/rewind_btn"
       app:layout_constraintTop_toBottomOf="@+id/rewind_btn"
-      style="@style/PlaybackTimeStyle"/>
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#8f8e8e"
+      android:textSize="18sp"
+      android:typeface="normal"/>
 
   <TextView
       android:id="@+id/song_duration"
@@ -66,5 +70,9 @@
       android:text="05:44"
       app:layout_constraintBaseline_toBaselineOf="@+id/song_current_time"
       app:layout_constraintRight_toRightOf="@+id/fast_forward_btn"
-      style="@style/PlaybackTimeStyle"/>
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="#8f8e8e"
+      android:textSize="18sp"
+      android:typeface="normal"/>
 </android.support.constraint.ConstraintLayout>

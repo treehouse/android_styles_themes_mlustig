@@ -31,7 +31,8 @@
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/song_title"
-      style="@style/PlaybackAlbumArtworkStyle"
+      android:scaleType="fitXY"
+      app:riv_corner_radius="20dp"
       app:layout_constraintDimensionRatio="h,1:1"/>
 
   <include
