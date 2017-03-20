@@ -7,12 +7,6 @@
 
   </style>
 
-  <style name="PlaybackButtonStyle">
-    <item name="android:layout_width">64dp</item>
-    <item name="android:layout_height">64dp</item>
-    <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
-  </style>
-
   <style name="BlurredBackgroundImageStyle">
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">match_parent</item>

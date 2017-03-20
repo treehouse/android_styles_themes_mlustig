@@ -18,29 +18,40 @@
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="parent"/>
 
+  android:layout_width="64dp"
+  android:layout_height="64dp"
+  android:background="?android:attr/selectableItemBackgroundBorderless"
+
   <ImageButton
       android:id="@+id/rewind_btn"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
       android:layout_marginLeft="16dp"
       android:layout_marginTop="8dp"
+      android:background="?android:attr/selectableItemBackgroundBorderless"
       android:onClick="onClickRewind"
       android:src="@drawable/ic_fast_rewind"
       app:layout_constraintBottom_toBottomOf="@+id/play_pause_btn"
       app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintTop_toTopOf="@+id/play_pause_btn"
-      style="@style/PlaybackButtonStyle"/>
+      app:layout_constraintTop_toTopOf="@+id/play_pause_btn"/>
   <ImageButton
       android:id="@+id/play_pause_btn"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
       android:layout_marginTop="8dp"
+      android:background="?android:attr/selectableItemBackgroundBorderless"
       android:onClick="onClickPlayPause"
       android:src="@drawable/ic_play_arrow"
       app:layout_constraintHorizontal_bias="0.498"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/song_seek_bar"
-      style="@style/PlaybackButtonStyle"/>
+      app:layout_constraintTop_toBottomOf="@+id/song_seek_bar"/>
   <ImageButton
       android:id="@+id/fast_forward_btn"
+      android:layout_width="64dp"
+      android:layout_height="64dp"
       android:layout_marginRight="16dp"
+      android:background="?android:attr/selectableItemBackgroundBorderless"
       android:onClick="onClickFastForward"
       android:src="@drawable/ic_fast_forward"
       app:layout_constraintBottom_toBottomOf="@+id/play_pause_btn"
@@ -48,31 +59,30 @@
       app:layout_constraintLeft_toRightOf="@+id/play_pause_btn"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="@+id/rewind_btn"
-      app:layout_constraintVertical_bias="0.0"
-      style="@style/PlaybackButtonStyle"/>
+      app:layout_constraintVertical_bias="0.0"/>
 
   <TextView
       android:id="@+id/song_current_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:layout_marginLeft="16dp"
       android:layout_marginTop="4dp"
       android:text="03:20"
-      app:layout_constraintLeft_toLeftOf="@+id/rewind_btn"
-      app:layout_constraintTop_toBottomOf="@+id/rewind_btn"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
       android:textColor="#8f8e8e"
       android:textSize="18sp"
-      android:typeface="normal"/>
+      android:typeface="normal"
+      app:layout_constraintLeft_toLeftOf="@+id/rewind_btn"
+      app:layout_constraintTop_toBottomOf="@+id/rewind_btn"/>
 
   <TextView
       android:id="@+id/song_duration"
-      android:layout_marginRight="8dp"
-      android:text="05:44"
-      app:layout_constraintBaseline_toBaselineOf="@+id/song_current_time"
-      app:layout_constraintRight_toRightOf="@+id/fast_forward_btn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_marginRight="8dp"
+      android:text="05:44"
       android:textColor="#8f8e8e"
       android:textSize="18sp"
-      android:typeface="normal"/>
+      android:typeface="normal"
+      app:layout_constraintBaseline_toBaselineOf="@+id/song_current_time"
+      app:layout_constraintRight_toRightOf="@+id/fast_forward_btn"/>
 </android.support.constraint.ConstraintLayout>
