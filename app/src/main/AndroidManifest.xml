@@ -28,7 +28,6 @@
 
     <activity
         android:name=".SettingsActivity"
-        android:theme="@style/SettingsTheme"
         android:screenOrientation="portrait">
     </activity>
 
