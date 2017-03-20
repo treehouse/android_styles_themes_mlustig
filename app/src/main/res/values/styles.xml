@@ -1,9 +1,9 @@
 <resources>
 
   <!-- Base application theme. -->
-  <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+  <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
     <!-- Customize your theme here. -->
-    <item name="android:colorAccent">@android:color/darker_gray</item>
+    <item name="colorAccent">@android:color/darker_gray</item>
 
   </style>
 
@@ -15,7 +15,7 @@
   <style name="PlaybackButtonStyle">
     <item name="android:layout_width">64dp</item>
     <item name="android:layout_height">64dp</item>
-    <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
   </style>
 
   <style name="PlaybackTimeStyle">
@@ -61,7 +61,6 @@
   </style>
 
   <style name="SettingsToolbarStyle">
-    <item name="android:textViewStyle">@style/SettingsToolbarTextStyle</item>
     <item name="android:layout_width">0dp</item>
     <item name="android:layout_height">?attr/actionBarSize</item>
     <item name="android:background">#2a2a2a</item>
@@ -106,7 +105,7 @@
     <item name="layout_constraintLeft_toLeftOf">parent</item>
   </style>
 
-  <style name="SettingsSwitchStyle">
+  <style name="BaseSettingsSwitchStyle">
     <item name="android:textSize">18sp</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
@@ -114,6 +113,10 @@
     <item name="android:layout_marginRight">64dp</item>
     <item name="layout_constraintRight_toRightOf">parent</item>
     <item name="layout_constraintLeft_toLeftOf">parent</item>
+  </style>
+
+  <style name="SettingsSwitchStyle" parent="BaseSettingsSwitchStyle">
+    <item name="android:background">@null</item>
   </style>
 
 </resources>

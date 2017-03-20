@@ -1,10 +1,10 @@
 package com.teamtreehouse.stylesandthemes;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
@@ -16,7 +16,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.wasabeef.blurry.Blurry;
 
-public class SongPlaybackActivity extends Activity {
+public class SongPlaybackActivity extends AppCompatActivity {
 
   public static final String EXTRA_SONG = "EXTRA_SONG";
   public static final String EXTRA_ALBUM_ART_RESID = "EXTRA_ALBUM_ART_SONG";

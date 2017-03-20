@@ -30,7 +30,7 @@
       style="@style/PlaybackButtonStyle"/>
   <ImageButton
       android:id="@+id/play_pause_btn"
-      android:layout_marginTop="12dp"
+      android:layout_marginTop="8dp"
       android:onClick="onClickPlayPause"
       android:src="@drawable/ic_play_arrow"
       app:layout_constraintHorizontal_bias="0.498"
@@ -44,7 +44,7 @@
       android:onClick="onClickFastForward"
       android:src="@drawable/ic_fast_forward"
       app:layout_constraintBottom_toBottomOf="@+id/play_pause_btn"
-      app:layout_constraintHorizontal_bias="0.921"
+      app:layout_constraintHorizontal_bias="1.0"
       app:layout_constraintLeft_toRightOf="@+id/play_pause_btn"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toTopOf="@+id/rewind_btn"
