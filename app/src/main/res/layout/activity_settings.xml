@@ -8,14 +8,14 @@
     android:background="#1d1d1d"
     android:orientation="vertical">
 
-  <android.support.v7.widget.Toolbar
+  <android.widget.Toolbar
       android:id="@+id/toolbar"
       tools:layout_height="52dp"
       style="@style/SettingsToolbarStyle">
     <TextView
         android:text="SETTINGS"
         style="@style/SettingsToolbarTextStyle"/>
-  </android.support.v7.widget.Toolbar>
+  </android.widget.Toolbar>
 
   <EditText
       android:id="@+id/username"
@@ -29,7 +29,7 @@
       app:layout_constraintTop_toBottomOf="@id/username"
       style="@style/SettingsEmailStyle"/>
 
-  <android.support.v7.widget.SwitchCompat
+  <android.widget.Switch
       android:id="@+id/bass_boost"
       android:layout_marginTop="48dp"
       android:checked="true"
@@ -37,7 +37,7 @@
       app:layout_constraintTop_toBottomOf="@+id/email"
       style="@style/SettingsSwitchStyle"/>
 
-  <android.support.v7.widget.SwitchCompat
+  <android.widget.Switch
       android:id="@+id/volume_boost"
       android:text="Volume Boost"
       app:layout_constraintTop_toBottomOf="@+id/bass_boost"

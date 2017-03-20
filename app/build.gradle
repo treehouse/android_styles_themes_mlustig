@@ -5,7 +5,7 @@ android {
   buildToolsVersion "25.0.2"
   defaultConfig {
     applicationId "com.teamtreehouse.stylesandthemes"
-    minSdkVersion 16
+    minSdkVersion 21
     targetSdkVersion 25
     versionCode 1
     versionName "1.0"
@@ -30,5 +30,5 @@ dependencies {
   compile 'jp.wasabeef:blurry:2.1.0'
   compile 'com.makeramen:roundedimageview:2.3.0'
 
-  compile 'com.android.support:appcompat-v7:25.3.0'
+//  compile 'com.android.support:appcompat-v7:25.3.0'
 }
